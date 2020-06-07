@@ -7,28 +7,30 @@
 
 
     <title>Mateo Leather</title>
+
+    <!-- Librería CSS BootStrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-
+    <!-- Fuente Lato de Google-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-
+    <!-- Hoja de Estilo Local-->
     <link rel="stylesheet" href="css/styles.css">
 
 
 
 </head> 
 <body>
-
+<!-- Librerías de BootStrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Menú -->
-  
+<!-- Fin Librerías de BootStrap-->
 
-<!-- Modal -->
 
-<div class="modal" tabindex="-1" role="dialog" id="modalCOVID">
+<!-- Modal COVID-->
+
+<div class="modal" tabindex="-1" role="dialog" id="modal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -49,12 +51,20 @@
     </div>
   </div>
 </div>
-<script>
-  $(document).ready(function()
-  {
-     $("#modalCOVID").modal("show");
-  });
-</script>
+
+<!-- Fin Modal COVID-->
+
+
+<!-- Mostrar Modal COVID-->
+
+<script src="js/showModal.js"></script>
+
+<!-- Fin Mostrar Modal COVID-->
+
+
+
+
+
 
     <header class="site-header inicio">
         <div class="contenedor contenido-header">
@@ -72,14 +82,13 @@
                   <a href="nosotros.html">Nosotros</a>
                   <a href="categoria2.html">Carteras</a>
                   <a href="categoria1.html">Billeteras</a>
-                  <a href="contacto.html">Contacto</a>
+                  <a href="cotizar.html">Cotizar</a>
                 </nav>
             </div>
-           <!-- <h1>Venta de productos de cuero Exclusivos  de Lujo</h1>-->
         </div>
     </header>
 
-    <!-- Fin menú -->
+    <!-- Fin navBar -->
 
 
 
@@ -160,15 +169,15 @@
 
 
 
-    <!-- Contenedor Carrusel testimonio -->
+    <!-- Contenedor Carrusel testimonios BootStrap-->
             
         
         <div class="col-sm-14">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div id="carruselTestimonios" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  <li data-target="#carruselTestimonios" data-slide-to="0" class="active"></li>
+                  <li data-target="#carruselTestimonios" data-slide-to="1"></li>
+                  <li data-target="#carruselTestimonios" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -194,24 +203,25 @@
                     </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carruselTestimonios" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carruselTestimonios" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Siguiente</span>
                 </a>
               </div>
         </div>
 
-    <!-- Fin Contenedor Carrusel testimonio -->
+    <!-- Fin Contenedor Carrusel testimonios BootStrap -->
 
 
 
      
-
+     <!-- Importar footer -->
                 <div w3-include-html="imports/footer.html"> </div>
                 <script src="js/importHTML.js"></script>
+     <!-- Fin importar footer-->
 </body>
 </html>

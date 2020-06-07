@@ -34,7 +34,7 @@
 
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
 
                 </div>
                 <div class="col">
@@ -182,11 +182,33 @@
               <label for="exampleFormControlTextarea1">Detalles de cotización</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <a href="/" class="boton boton-amarillo d-block " data-toggle="modal" data-target="#cotizacionModal" >Cotizar</a>
+
           </form>
-        
+
     </main>
 
-    <a href="/" class="boton boton-amarillo d-block " >Cotizar</a>
+    <div class="modal fade" id="cotizacionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¡Cotización enviada!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Has enviado tu cotización con éxito!
+            Gestionaremos tu pedido y nos contactaremos en breve,
+            Mateo Leather.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Gracias!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
    
 
