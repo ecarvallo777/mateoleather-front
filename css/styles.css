@@ -250,10 +250,12 @@ h4 {
 }
 @media (min-width: 768px) {
     .entrada-blog .imagen {
-        flex-basis: 40%;
+        width: 300px;
+        height: 400px
     }
     .entrada-blog .texto-entrada {
-        flex-basis: calc(60% - 3rem);
+        flex-basis: calc(70% - 3rem);
+        justify-content: left;
     }
 }
 .texto-entrada a {
