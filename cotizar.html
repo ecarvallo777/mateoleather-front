@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
-
+    <!--hoja de estilo de Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-
+    <!-- Fuente Lato de Google-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <!-- Hojas de estilos locales -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<!-- Librerías de BootStrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+<!-- Fin Librerías de BootStrap-->
+
+<!-- Importar header -->
     <div w3-include-html="imports/header.html"> </div>
 
     <script src="js/importHTML.js"></script>
+<!-- Fin importar header -->
 
+
+<!-- Contenedor Formulario -->
     <h1 class="fw-300 centrar-texto">Hablemos!</h1>
     <main class="contenedor seccion contenido-centrado">
         <h2 class="fw-300 centrar-texto">Llena el formulario de Cotización</h2>
@@ -83,18 +90,6 @@
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                 <label class="form-check-label" for="inlineCheckbox1">Cartera Modelo Liso Caimán      </label>
                             </div>
-                            
-                          
-
-
-
-                  
-
-
-                          
-                        
-
-
 
                          </div>
 
@@ -170,24 +165,19 @@
                     </div>
                     
                   </fieldset>
-            
-
-
-           
-           
-
-
 
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Detalles de cotización</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <a href="/" class="boton boton-amarillo d-block " data-toggle="modal" data-target="#cotizacionModal" >Cotizar</a>
 
           </form>
 
     </main>
-    <a href="/" class="boton boton-amarillo d-block " data-toggle="modal" data-target="#cotizacionModal" >Cotizar</a>
+<!-- Fin Contenedor Formulario -->
 
+<!-- Modal Envío -->
     <div class="modal fade" id="cotizacionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -209,10 +199,13 @@
       </div>
     </div>
 
+<!-- Fin Modal Envío -->
 
    
-
+<!-- Importar Footer-->
     <div w3-include-html="imports/footer.html"> </div>
     <script src="js/importHTML.js"></script>
+<!-- Fin Importar Footer-->
+
 </body>
 </html>
